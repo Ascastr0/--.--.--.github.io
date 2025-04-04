@@ -20,7 +20,7 @@ generateSpaceLayer("5px", ".space-3", 25, "15s");
 
 
 const IMAGES_FOLDER = "ims/"; 
-const TOTAL_IMAGES = 7;
+const TOTAL_IMAGES = 24;
 
 const createFloatingImage = () => {
     const img = document.createElement("img");

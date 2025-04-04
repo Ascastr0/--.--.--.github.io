@@ -92,6 +92,97 @@ p {
     animation-duration: 4s;
 }
 
+.music-button {
+    background: #a370f0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.35em 1.5em;
+    padding-left: 1.5em;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 0.8em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: fixed;
+    height: 2em;
+    padding-right: 3.5em;
+    cursor: pointer;
+    max-width: fit-content;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 4.5s;
+    animation-duration: 1s;
+    z-index: 10;
+    transition: opacity 0.5s ease;
+}
+
+.music-button .icon {
+    background: white;
+    margin-left: 0.7em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em 0.4em 0.1em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.music-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.music-button .icon svg {
+    width: 0.8em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.music-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.music-button:active .icon {
+    transform: scale(0.95);
+}
+
+.cssbuttons-io-button-music {
+    background: #a370f0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.625em 2.14em;
+    padding-left: 2.14em;
+    font-size: 35px;
+    font-weight: 400;
+    border-radius: 0.8em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 3em;
+    padding-right: 5.5em;
+    cursor: pointer;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-left: 3em;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 4s;
+    animation-duration: 4s;
+}
+
 .cssbuttons-io-button .icon {
     background: white;
     margin-left: 1em;
